@@ -20,12 +20,18 @@
                 <p>Welcome back</p>
                 <h1>Login to your account</h1>
 
-                <form action="welcome.html">
+                <form action="welcome.html" onsubmit="return valid()">
+                    <!-- <form action="#"> -->
 
                     <label>Email</label><br><br>
-                    <input type="email" placeholder="Enter Email here" name="" id="email"><br>
+                    <input type="text" placeholder="Enter Email here" name="" id="email"><br>
+                    <p><span id="invalidEmail">Invalid Email</span> <span id="fillEmail">Enter Email</span> <span
+                            id="invalidSyntax"> @ or
+                            .com is missing </span> </p>
                     <label>Password</label><br><br>
                     <input type="password" placeholder="Enter Password" id="pass"><br>
+                    <p><span id="invalidPass">Invalid Password</span> <span id="fillPass">Enter Password</span> </p>
+
                     <div class="radio-btn">
                         <input type="radio" value="remember">
                         <label for="remember" class="remember">Remember me</label>
@@ -33,7 +39,7 @@
                     </div>
 
                     <div class="btn">
-                        <input type="submit" onclick="valid()" value="Login now"><br>
+                        <input type="submit" value="Login now"><br>
                         <a href="#" class="google-sign-in">
 
                             <img src="assets/google-icon.png" alt="google icon">
