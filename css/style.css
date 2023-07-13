@@ -50,6 +50,23 @@ a {
     font-weight: 400;
 }
 
+.login-form>form>p {
+    margin-top: -10px;
+    color: red;
+    font-size: 12px;
+}
+
+.login-form>form>p>#invalidEmail,
+.login-form>form>p>#invalidPass,
+.login-form>form>p>#invalidSyntax {
+    display: none;
+}
+
+.login-form>form>p>#fillEmail,
+.login-form>form>p>#fillPass {
+    display: none;
+}
+
 .account {
     display: flex;
     flex-direction: column;
@@ -57,7 +74,7 @@ a {
     color: #616161;
 }
 
-input[type=email],
+input[type=text],
 input[type=password] {
     padding-left: 20px;
     width: 350px;
@@ -65,7 +82,7 @@ input[type=password] {
     color: #2D3748;
     font-size: 14px;
     font-weight: 400;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-radius: 5px;
     border: 1px solid #E8E8E8;
 }
