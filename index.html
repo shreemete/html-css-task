@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Login</title>
 
 </head>
@@ -20,12 +20,12 @@
                 <p>Welcome back</p>
                 <h1>Login to your account</h1>
 
-                <form action="#">
+                <form action="welcome.html">
 
                     <label>Email</label><br><br>
-                    <input type="email" placeholder="Enter Email here" name="" id=""><br>
+                    <input type="email" placeholder="Enter Email here" name="" id="email"><br>
                     <label>Password</label><br><br>
-                    <input type="password" placeholder="Enter Password"><br>
+                    <input type="password" placeholder="Enter Password" id="pass"><br>
                     <div class="radio-btn">
                         <input type="radio" value="remember">
                         <label for="remember" class="remember">Remember me</label>
@@ -33,7 +33,7 @@
                     </div>
 
                     <div class="btn">
-                        <input type="submit" value="Login now"><br>
+                        <input type="submit" onclick="valid()" value="Login now"><br>
                         <a href="#" class="google-sign-in">
 
                             <img src="assets/google-icon.png" alt="google icon">
@@ -50,6 +50,7 @@
 
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
