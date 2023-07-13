@@ -72,6 +72,7 @@ input[type=password] {
 
 .remember {
     font-size: 14px;
+    margin-right: 150px;
 }
 
 .forgot {
@@ -234,6 +235,7 @@ input[type=button] {
 
     .remember {
         font-size: 12px;
+
     }
 
     .forgot {
